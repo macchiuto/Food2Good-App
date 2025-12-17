@@ -41,7 +41,7 @@ This project was developed by:
 
 ## 🎥 Video Demonstration
 You can watch the full walkthrough of the application features here:
-[Watch Video Demo](https://drive.google.com/file/d/1fnUN-fX--WMYLSE-8u_jmvH8oDnLYvyw/view?usp=sharing)
+[Watch Video Demo](https://drive.google.com/file/d/17kWDFH-vMEBkFLJrJiRglCAqdvvuKXvy/view?usp=drive_link)
 
 ---
 *Note: This is a frontend simulation for academic purposes and does not include database integration.*
