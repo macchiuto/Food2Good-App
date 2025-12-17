@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Food2Good</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus untuk Auth Pages */
+        .auth-page {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .auth-container {
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background-color: white;
+            text-align: left;
+        }
+        .auth-container h1 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .auth-form input[type="email"],
+        .auth-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .auth-footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .auth-footer a {
+            color: #3a8018;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="foto/logo food2good.png" alt="Food2Good Logo" height="40">
+                <span>Food2Good</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">How It Works</a></li>
+                <li><a href="browse-all-deals.html">Browse Deals</a></li> 
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="merchant-dashboard-overview.html">For Merchant</a></li>
+            </ul>
+            <div class="nav-auth-container">
+                
+                <div class="nav-auth nav-auth-default">
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="register.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
+                
+                <div class="nav-auth nav-auth-logged-in hidden">
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle">Akun Saya</button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profil</a>
+                            <a href="#">Pengaturan</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#">Keluar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="auth-page">
+        <div class="auth-container">
+            <h1>Masuk ke Akun Anda</h1>
+            <form class="auth-form" action="index-logged-in.html">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary full-width" style="padding: 12px;">Masuk</button>
+            </form>
+            <div class="auth-footer">
+                Belum punya akun? <a href="register.html">Daftar di sini</a>
+            </div>
+        </div>
+    </main>
+    
+    </body>
+</html>

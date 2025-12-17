@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food2Good - Kurangi Food Waste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="foto/logo food2good.png" alt="Food2Good Logo" height="40">
+                <span>Food2Good</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">How It Works</a></li>
+                <li><a href="browse-all-deals.html">Browse Deals</a></li> 
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="merchant-dashboard-overview.html">For Merchant</a></li>
+            </ul>
+            
+            <div class="nav-auth-container">
+                
+                <div class="nav-auth nav-auth-default hidden">
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="register.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
+                
+                <div class="nav-auth nav-auth-logged-in">
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle">Akun Saya</button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profil</a>
+                            <a href="#">Pengaturan</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#">Keluar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Kurangi Food Waste, Belanja Hemat, Donasi Otomatis</h1>
+                <p>Beli makanan surplus dari merchant terpercaya dengan diskon hingga 80%, dari setiap transaksi otomatis mendonasikan 10% untuk yayasan sosial.</p>
+                <div class="hero-buttons">
+                    <a href="browse-all-deals.html" class="btn btn-primary">Mulai Cari Makanan Surplus</a>
+                    <a href="#" class="btn btn-outline" style="color: var(--dark-text); border-color: #ccc;">Daftar Sebagai Merchant</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card-display">
+                    <img src="foto/gift-box-icon-614x460.png" alt="Gift Icon" style="width: 200px; margin-bottom: 10px;">
+                    <div class="impact-tag">Dari setiap transaksi,</div>
+                    <h2>10%</h2>
+                    <p>didonasikan ke yayasan.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cara Kerja Food2Good</h2>
+            <p class="section-subtitle">3 langkah sederhana untuk mengurangi pemborosan makanan sambil membantu masyarakat</p>
+        
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="icon-box">📍</div> <h3>Merchant Upload</h3>
+                    <p>Merchant mengunggah makanan surplus dengan harga diskon</p>
+                </div>
+                <div class="step-card">
+                    <div class="icon-box">🛒</div>
+                    <h3>Customer Membeli</h3>
+                    <p>Pelanggan berbelanja dengan hemat hingga 50% lebih murah</p>
+                </div>
+                <div class="step-card">
+                    <div class="icon-box">❤️</div>
+                    <h3>Donasi Otomatis</h3>
+                    <p>Food2Good & merchant donasi 10% ke yayasan mitra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured section-padding">
+        <div class="container">
+            <h2 class="section-title">Featured Deals</h2>
+            <p style="margin-top: -30px; margin-bottom: 30px; color: var(--muted-text);">Makanan terbaik dengan diskon besar-besaran.</p>
+            
+            <div class="deals-grid">
+                <div class="food-card">
+                    <div class="card-image">
+                        <img src="foto/bakso.jpg" alt="Bakso Urat"> </div>
+                    <div class="card-content">
+                        <h3>Bakso Urat</h3>
+                        <p class="merchant-name">Warung Bakso Pak Jono</p>
+                        <p class="price">Rp 25.000</p>
+                        <button class="btn btn-primary full-width">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="card-image">
+                        <img src="foto/nasi goreng spesial.jpg" alt="Nasi Goreng">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nasi Goreng Spesial</h3>
+                        <p class="merchant-name">Nasi Goreng 79</p>
+                        <p class="price">Rp 28.000</p>
+                        <button class="btn btn-primary full-width">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="card-image">
+                        <img src="foto/kue lapis.jpg" alt="Kue Lapis">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kue Lapis</h3>
+                        <p class="merchant-name">Celeste Bakery</p>
+                        <p class="price">Rp 10.000</p>
+                        <button class="btn btn-primary full-width">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                 <div class="food-card">
+                    <div class="card-image">
+                        <img src="foto/Soto Ayam.jpg" alt="Soto Ayam">
+                    </div>
+                    <div class="card-content">
+                        <h3>Soto Ayam</h3>
+                        <p class="merchant-name">Soto Ayam Bu Sri</p>
+                        <p class="price">Rp 25.000</p>
+                        <button class="btn btn-primary full-width">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                 <div class="food-card">
+                    <div class="card-image">
+                        <img src="foto/martabak telur.jpg" alt="Martabak Telur">
+                    </div>
+                    <div class="card-content">
+                        <h3>Martabak Telur</h3>
+                        <p class="merchant-name">Martabak Juragan</p>
+                        <p class="price">Rp 35.000</p>
+                        <button class="btn btn-primary full-width">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                 <div class="food-card">
+                    <div class="card-image">
+                        <img src="foto/Lumpia Semarang.jpg" alt="Lumpia Semarang">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lumpia Semarang</h3>
+                        <p class="merchant-name">Lumpia Khas Semarang 23</p>
+                        <p class="price">Rp 20.000</p>
+                        <button class="btn btn-primary full-width">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <div class="container">
+            <h2 class="section-title">Dampak Food2Good</h2>
+            <p class="section-subtitle">Bersama kita ciptakan perubahan positif</p>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">🍃</div>
+                    <h3>15,342</h3>
+                    <p>Kg Makanan Terselamatkan</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">💰</div>
+                    <h3>Rp 125.5 M</h3>
+                    <p>Total Donasi Tersalurkan</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">🏪</div>
+                    <h3>50++</h3>
+                    <p>Merchant Bergabung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="merchant-section">
+        <div class="container merchant-container">
+            <div class="merchant-text">
+                <h2 class="section-title" style="text-align: left;">Untuk Merchant</h2>
+                <p>Bergabunglah dengan Food2Good untuk mengurangi food waste, meningkatkan revenue, dan membangun brand peduli sosial Anda.</p>
+                
+                <ul class="merchant-features">
+                    <li>
+                        <span class="icon">📊</span>
+                        <span>Kelola stok surplus dengan mudah</span>
+                    </li>
+                    <li>
+                        <span class="icon">⤴️</span>
+                        <span>Atur diskon dan maksimalkan revenue</span>
+                    </li>
+                    <li>
+                        <span class="icon">🛡️</span>
+                        <span>Dashboard donasi dan laporan transparan</span>
+                    </li>
+                </ul>
+                
+                <a href="#" class="btn-primary">Daftar sebagai Merchant ➜</a>
+            </div>
+
+            <div class="merchant-benefit-box">
+                <h3>Benefit untuk Anda</h3>
+                
+                <div class="benefit-item">
+                    <h4>Reduce Waste</h4>
+                    <p>Kurangi limbah makanan hingga 80%</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Boost Sales</h4>
+                    <p>Tingkatkan penjualan dengan customer baru</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Build Brand</h4>
+                    <p>Ciptakan citra sebagai bisnis yang peduli sosial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo-identity">
+                    <img src="foto/logo food2good.png" alt="Food2Good Icon" height="40" class="logo-icon-footer"> 
+                    <div class="logo-text">
+                        Food2Good
+                    </div>
+                </div>
+                <p>Kurangi food waste, belanja hemat, donasi otomatis.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Platforms</h4>
+                <ul>
+                    <li><a href="browse-all-deals.html">Browse Deals</a></li>
+                    <li><a href="dashboard-pesanan.html">My Dashboard</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Merchant</h4>
+                <ul>
+                    <li><a href="merchant-dashboard-overview.html">Merchant Dashboard</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-flex">
+                <p>&copy; 2025 Food2Good. Semua Hak Cipta Dilindungi.</p>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

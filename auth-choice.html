@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Akun - Food2Good</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus untuk Halaman Pilihan */
+        .auth-choice-page {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .choice-container {
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background-color: white;
+        }
+        .choice-container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .choice-container p {
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .choice-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .choice-card {
+            padding: 30px 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        .choice-card:hover {
+            border-color: #3a8018; /* Hijau Food2Good */
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .choice-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="foto/logo food2good.png" alt="Food2Good Logo" height="40">
+                <span>Food2Good</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index-logged-in.html">How It Works</a></li>
+                <li><a href="browse-all-deals.html">Browse Deals</a></li> 
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="merchant-dashboard-overview.html">For Merchant</a></li>
+            </ul>
+            <div class="nav-auth-container">
+                
+                <div class="nav-auth nav-auth-default">
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="register.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
+                
+                <div class="nav-auth nav-auth-logged-in hidden">
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle">Akun Saya</button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profil</a>
+                            <a href="#">Pengaturan</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#">Keluar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="auth-choice-page">
+        <div class="choice-container">
+            <h1>Selamat Datang di Food2Good</h1>
+            <p>Silakan pilih jenis akun yang ingin Anda akses atau buat:</p>
+            <div class="choice-grid">
+                <a href="login.html" class="choice-card">
+                    <div class="choice-icon">🧑</div>
+                    Member/Pembeli
+                </a>
+                
+                <a href="login.html?role=merchant" class="choice-card">
+                    <div class="choice-icon">🏪</div>
+                    Merchant/Toko
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    </body>
+</html>
