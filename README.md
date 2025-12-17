@@ -26,7 +26,6 @@ This project was developed by:
 - Syalista Galuh Nadira
 
 ## 📂 Project Structure
-## 📂 Project Structure
 - `index.html` / `index-logged-in.html`: Main landing page variants.
 - `browse-all-deals.html`: Main marketplace catalog.
 - `browse-deals-[category].html`: Categorized marketplace views (Rice, Cake, Snacks, Traditional).
